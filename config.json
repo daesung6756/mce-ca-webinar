@@ -20,28 +20,48 @@
   "schema": {
     "arguments": {
       "execute": {
-        "inArguments": [
-          {"ContactKey": "{{Contact.key}}"},
-          {"FirstName": "{{Contact.Attribute.JourneyEntrySource.FirstName}}"},
-          {"LastName": "{{Contact.Attribute.JourneyEntrySource.lastName}}"}
-        ],
+        "inArguments": [],
         "url": "https://daesung6756.github.io/mce-ca-webinar/",
         "outArguments": [
-          {"ContactKey": "{{Contact.key}}"},
-          {"FirstName": "{{Contact.Attribute.JourneyEntrySource.FirstName}}"},
-          {"LastName": "{{Contact.Attribute.JourneyEntrySource.lastName}}"}
-        ]
+          {
+            "message": "text"
+          },
+          {
+            "response": "text"
+          },
+          {
+            "payload": "text"
+          },
+          {
+            "universeName": "text"
+          },
+          {
+            "variationName": "text"
+          }
+        ],
+        "verb": "POST",
+        "body": "",
+        "header": "",
+        "format": "json",
+        "timeout": 30000
       }
     }
   },
   "outcomes": [
     {
       "arguments": {
-        "branchResult": "카카오톡 수신 동의",
-        "some argument": "passed from config.json for kakao_talk",
-        "metaData": {
-          "invalid": false
-        }
+        "branchResult": "success"
+      },
+      "metaData": {
+        "label": "Success"
+      }
+    },
+    {
+      "arguments": {
+        "branchResult": "error"
+      },
+      "metaData": {
+        "label": "Error"
       }
     }
   ],
