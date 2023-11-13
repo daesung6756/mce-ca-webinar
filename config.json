@@ -7,8 +7,8 @@
   "type": "REST",
   "userInterfaces": {
     "configModal": {
-      "height": 600,
       "width": 600,
+      "height": 400,
       "fullscreen": false
     }
   },
