@@ -80,18 +80,18 @@
   "outcomes": [
     {
       "arguments": {
-        "branchResult": "success"
+        "branchResult": "SMS_Y"
       },
       "metaData": {
-        "label": "Success"
+        "label": "카카오톡 수신 동의"
       }
     },
     {
       "arguments": {
-        "branchResult": "error"
+        "branchResult": "SMS_Y"
       },
       "metaData": {
-        "label": "Error"
+        "label": "카카오톡 수신 비동의"
       }
     }
   ],
