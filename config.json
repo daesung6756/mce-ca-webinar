@@ -37,7 +37,7 @@
   "outcomes": [
     {
       "arguments": {
-        "branchResult": "kakao_talk",
+        "branchResult": "카카오톡 수신 동의",
         "some argument": "passed from config.json for kakao_talk",
         "metaData": {
           "invalid": false
