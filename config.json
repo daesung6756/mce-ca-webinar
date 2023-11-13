@@ -1,0 +1,34 @@
+{
+  "workflowApiVersion": "1.1",
+  "metaData": {
+    "icon": "images/talk.png",
+    "category": "custom"
+  },
+  "type": "REST",
+  "userInterfaces": {
+    "configModal": {
+      "height": 700,
+      "width": 789,
+      "fullscreen": false
+    }
+  },
+  "configurationArguments": {
+    "publish": {
+      "url": "https://daesung6756.github.io/mce-ca-webinar/"
+    }
+  },
+  "schema": {
+    "arguments": {
+      "execute": {
+        "inArguments": [{
+          "myInArgument": {
+            "dataType": "<some data type>",
+            "isNullable": false,
+            "direction": "in"
+          }
+        }],
+        "outArguments": []
+      }
+    }
+  }
+}
