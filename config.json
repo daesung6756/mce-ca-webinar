@@ -76,26 +76,5 @@
         "timeout": 30000
       }
     }
-  },
-  "outcomes": [
-    {
-      "arguments": {
-        "branchResult": "SMS_Y"
-      },
-      "metaData": {
-        "label": "카카오톡 수신 동의"
-      }
-    },
-    {
-      "arguments": {
-        "branchResult": "SMS_Y"
-      },
-      "metaData": {
-        "label": "카카오톡 수신 비동의"
-      }
-    }
-  ],
-  "outcomeLabelLanguageMap":{
-    "SMS_Y":"SMS_Y"
   }
 }
