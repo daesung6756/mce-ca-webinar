@@ -7,73 +7,55 @@
   "type": "REST",
   "lang": {
     "en-US": {
-      "name": "Custom Activity",
-      "description": "Custom Activity"
-    }
-  },
-  "userInterfaces": {
-    "configModal": {
-      "width": 600,
-      "height": 400,
-      "fullscreen": false
-    }
-  },
-  "configurationArguments": {
-    "publish": {
-      "url": "https://daesung6756.github.io/mce-ca-webinar/"
+      "name": "Simple Custom Activity",
+      "description": "A simple custom activity that does not require backend connection"
     }
   },
   "arguments": {
     "execute": {
       "inArguments": [],
-      "url": "https://daesung6756.github.io/mce-ca-webinar/",
-      "outArguments": [
-        {
-          "message": "text"
-        },
-        {
-          "response": "text"
-        },
-        {
-          "payload": "text"
-        }
-      ],
+      "outArguments": [],
+      "url": "https://daesung6756.github.io/mce-ca-webinar/execute",
       "verb": "POST",
       "body": "",
       "header": "",
       "format": "json",
-      "timeout": 30000
+      "useJwt": false,
+      "timeout": 10000
+    }
+  },
+  "configurationArguments": {
+    "save": {
+      "url": "https://daesung6756.github.io/mce-ca-webinar/save"
+    },
+    "publish": {
+      "url": "https://daesung6756.github.io/mce-ca-webinar/"
+    },
+    "validate": {
+      "url": "https://daesung6756.github.io/mce-ca-webinar/validate"
+    }
+  },
+  "wizardSteps": [
+    {
+      "label": "Step 1",
+      "key": "step1"
+    },
+    {
+      "label": "Step 2",
+      "key": "step2"
+    }
+  ],
+  "userInterfaces": {
+    "configModal": {
+      "height": 200,
+      "width": 300
     }
   },
   "schema": {
     "arguments": {
       "execute": {
         "inArguments": [],
-        "url": "https://daesung6756.github.io/mce-ca-webinar/",
-        "outArguments": [
-          {
-            "message": {
-              "dataType": "Text",
-              "direction": "out",
-              "access": "visible"
-            },
-            "response": {
-              "dataType": "Text",
-              "direction": "out",
-              "access": "visible"
-            },
-            "payload": {
-              "dataType": "Text",
-              "direction": "out",
-              "access": "visible"
-            }
-          }
-        ],
-        "verb": "POST",
-        "body": "",
-        "header": "",
-        "format": "json",
-        "timeout": 30000
+        "outArguments": []
       }
     }
   }
