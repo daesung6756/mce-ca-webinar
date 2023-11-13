@@ -36,9 +36,12 @@
   },
   "outcomes": [
     {
-      "next": "WAITBYDURATION-2",
-      "metaData": {
-        "invalid": false
+      "arguments": {
+        "branchResult": "kakao_talk",
+        "some argument": "passed from config.json for kakao_talk",
+        "metaData": {
+          "invalid": false
+        }
       }
     }
   ],
