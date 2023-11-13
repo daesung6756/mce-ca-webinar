@@ -5,6 +5,12 @@
     "category": "custom"
   },
   "type": "REST",
+  "lang": {
+    "en-US": {
+      "name": "Custom Activity",
+      "description": "Custom Activity"
+    }
+  },
   "userInterfaces": {
     "configModal": {
       "width": 600,
@@ -17,6 +23,28 @@
       "url": "https://daesung6756.github.io/mce-ca-webinar/"
     }
   },
+  "arguments": {
+    "execute": {
+      "inArguments": [],
+      "url": "https://daesung6756.github.io/mce-ca-webinar/",
+      "outArguments": [
+        {
+          "message": "text"
+        },
+        {
+          "response": "text"
+        },
+        {
+          "payload": "text"
+        }
+      ],
+      "verb": "POST",
+      "body": "",
+      "header": "",
+      "format": "json",
+      "timeout": 30000
+    }
+  },
   "schema": {
     "arguments": {
       "execute": {
@@ -24,19 +52,21 @@
         "url": "https://daesung6756.github.io/mce-ca-webinar/",
         "outArguments": [
           {
-            "message": "text"
-          },
-          {
-            "response": "text"
-          },
-          {
-            "payload": "text"
-          },
-          {
-            "universeName": "text"
-          },
-          {
-            "variationName": "text"
+            "message": {
+              "dataType": "Text",
+              "direction": "out",
+              "access": "visible"
+            },
+            "response": {
+              "dataType": "Text",
+              "direction": "out",
+              "access": "visible"
+            },
+            "payload": {
+              "dataType": "Text",
+              "direction": "out",
+              "access": "visible"
+            }
           }
         ],
         "verb": "POST",
@@ -65,6 +95,10 @@
       }
     }
   ],
-  "editable": true,
-  "error":null
+  "wizardSteps": [
+    {
+      "label": "Step 1",
+      "key": "step1"
+    }
+  ]
 }
