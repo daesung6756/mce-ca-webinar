@@ -21,13 +21,28 @@
     "arguments": {
       "execute": {
         "inArguments": [
-          {"ContactKey":  "{{Contact.key}}"},
-          {"FirstName" :  "{{Contact.Attribute.JourneyEntrySource.FirstName}}"},
-          {"LastName" :  "{{Contact.Attribute.JourneyEntrySource.lastName}}"}
+          {
+            "ContactKey": "{{Contact.key}}"
+          },
+          {
+            "FirstName": "{{Contact.Attribute.JourneyEntrySource.FirstName}}"
+          },
+          {
+            "LastName": "{{Contact.Attribute.JourneyEntrySource.lastName}}"
+          }
         ],
-        "url": "https://daesung6756.github.io/mce-ca-webinar/"
-        }],
-        "outArguments": []
+        "url": "https://daesung6756.github.io/mce-ca-webinar/",
+        "outArguments": [
+          {
+            "ContactKey": "{{Contact.key}}"
+          },
+          {
+            "FirstName": "{{Contact.Attribute.JourneyEntrySource.FirstName}}"
+          },
+          {
+            "LastName": "{{Contact.Attribute.JourneyEntrySource.lastName}}"
+          }
+        ]
       }
     }
   }
