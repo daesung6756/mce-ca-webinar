@@ -95,10 +95,7 @@
       }
     }
   ],
-  "wizardSteps": [
-    {
-      "label": "Step 1",
-      "key": "step1"
-    }
-  ]
+  "outcomeLabelLanguageMap":{
+    "SMS_Y":"SMS_Y"
+  }
 }
