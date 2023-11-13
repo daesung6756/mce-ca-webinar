@@ -2,7 +2,7 @@
   "workflowApiVersion": "1.1",
   "metaData": {
     "icon": "images/talk.png",
-    "category": "custom"
+    "category": "messages"
   },
   "type": "REST",
   "userInterfaces": {
