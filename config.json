@@ -15,7 +15,7 @@
     "execute": {
       "inArguments": [],
       "outArguments": [],
-      "url": "https://example.com/execute",
+      "url": "",
       "verb": "POST",
       "body": "",
       "header": "",
@@ -26,13 +26,13 @@
   },
   "configurationArguments": {
     "save": {
-      "url": "https://daesung6756.github.io/mce-ca-webinar/"
+      "url": ""
     },
     "publish": {
-      "url": "https://daesung6756.github.io/mce-ca-webinar/"
+      "url": ""
     },
     "validate": {
-      "url": "https://daesung6756.github.io/mce-ca-webinar/"
+      "url": ""
     }
   },
   "userInterfaces": {
